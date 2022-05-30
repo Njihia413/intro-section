@@ -32,19 +32,20 @@
 
 .heading {
     font-weight: 700;
-    margin-top: 100px;
+    margin-top: 120px;
     font-size: 80px;
     line-height: 80px;
 }
 
 
 .hero {
-    margin-left: 100px;
+    margin-left: 170px;
 }
 
 .paragraph {
     color: hsl(0, 0%, 41%);
     margin-top: 30px;
+    font-size: 18px;
 }
 
 .btn-dark {
@@ -63,11 +64,10 @@
 }
 
 .footer-images {
-    margin-top: 70px;
+    margin-top: 50px;
     display:flex;
-    justify-content:space-evenly;
-    margin-left: -80px;
-    overflow:hidden;
+    justify-content:space-between;
+    margin-right: 200px;
 }
 
 .attribution { 
