@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-}
 
 * {
     box-sizing: border-box;
@@ -10,10 +6,6 @@
     margin: 0;
     padding: 0;
     background-color: hsl(0, 0%, 98%);
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
 }
 
 .logo {
@@ -31,10 +23,11 @@
 }
 
 #register {
-    border:1px solid hsl(0, 0%, 41%);
+    border:3px solid hsl(0, 0%, 41%);
     border-radius: 15px;
     padding: 10px 25px;
     color: hsl(0, 0%, 41%);
+    margin-right: 30px;
 }
 
 .heading {
@@ -70,6 +63,19 @@
 }
 
 .footer-images {
-    margin-top: 60px;
+    margin-top: 70px;
     display:flex;
+    justify-content:space-evenly;
+    margin-left: -80px;
+    overflow:hidden;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
