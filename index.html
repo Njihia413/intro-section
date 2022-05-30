@@ -2,38 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title> 
+  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.svg" alt="Snap Logo" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item-dropdown">
+            <a class="nav-link" href="#">Features
+              <img src="images/icon-arrow-down.svg" alt="Icon-arrow-down" class="arrow-down">
+            </a>
+            <!-- <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul> -->
+          </li>
+          <li class="nav-item-dropdown">
+            <a class="nav-link" href="#">Company
+              <img src="images/icon-arrow-down.svg" alt="Icon-arrow-down" class="arrow-down">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>  
+        </ul>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="nav-link" id="login" href="#">Login</a></li>
+        <li><a class="nav-link" id="register" href="#">Register</a></li>
+      </ul>
+    </div>
+  </nav>
   
+  <!--Main content-->
+  <div class="main">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-6">
+        <p class="heading">Make <br>remote work</p>
+        <p class="paragraph">Get your team in sync, no matter your location.<br>
+        Streamline processes, create team rituals, and <br> watch productivity soar.</p>
+        <button type="button" class="btn btn-dark">Learn more</button>
+        <div class="footer-images">
+          <img src="images/client-databiz.svg" alt="Databiz image">
+          <img src="images/client-audiophile.svg" alt="Audiophile image">
+          <img src="images/client-meet.svg" alt="Meet image">
+          <img src="images/client-maker.svg" alt="Maker image">
+        </div>
+       </div>
+       <div class="col-md-6">
+         <img src="images/image-hero-desktop.png" class="hero" width="550px" height="550px" alt="Hero-image">
+       </div>
+     </div>
+   </div>
+  </div>
+
+  <!--Attribution-->
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="js/script.js" async defer></script>
 </body>
 </html>
